@@ -1,0 +1,97 @@
+<div class="container-fluid">
+  <form>
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-md-4">
+        <div class="text-center bg-primary img-rounded kz-pad-20">
+          <div class="row">
+            <div class="col-xs-10">
+              <input 
+                type="text" 
+                class="form-control text-right kz-input-text"
+                id="display" 
+                name="display"
+                [value]="display" 
+                readonly>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn"
+                (click)="definirOperacao('+')" 
+                id="btnSoma">+
+              </button>
+            </div>
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn"
+                (click)="definirOperacao('-')" 
+                id="btnSubtracao">-
+              </button>
+            </div>
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn"
+                (click)="definirOperacao('*')"  
+                id="btnMIltiplicacao">*
+              </button>
+            </div>
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn"
+                (click)="definirOperacao('/')" 
+                id="btnDivisao">/
+              </button>
+            </div>
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-warning kz-btn"
+                (click)="definirOperacao('%')" 
+                id="btnDivisao">%
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2">
+              <button 
+                type="button"
+                (click)="limpar()"
+                class="btn btn-danger kz-btn">C
+              </button>
+            </div>
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn"
+                (click)="adicionarNumero('0')" 
+                id="btn0">0
+              </button>
+            </div>
+            <div class="col-xs-2">
+              <button 
+                type="button" 
+                class="btn btn-default kz-btn"
+                (click)="adicionarNumero('1')" 
+                id="btn1">1
+              </button>
+            </div>
+            <div class="col-xs-4">
+              <button 
+                type="button" 
+                class="btn btn-success kz-btn"
+                (click)="calcular()" 
+                id="btnCalcular">=
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+  
