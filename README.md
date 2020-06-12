@@ -2,6 +2,8 @@
 
     Projeto criado para solução de teste do processo seletivo para a empresa Digistarts.
 
+    O projeto consite em uma calculadora binária, que executa as operações de soma, subtração, multiplicação, divisão e módulo.
+
     Desenvolvido por: Ronaldo Gama
 
     e-mail: rcfgama@gmail.com
